@@ -85,7 +85,7 @@ def main(evolute=True,
 
         if cf.plot_segments:
             fig = plt.figure()
-            ax = fig.gca(projection='3d')
+            ax = fig.add_subplot(111, projection='3d')
             plt.title(cf.plot_segments_title)
 
         for epoch in tqdm(range(cf.epochs)):
